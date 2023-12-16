@@ -13,7 +13,7 @@ import Alert from './components/Alert';
 
  
 function App() {
-  const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
+  const [mode, setMode] = useState('success'); // Whether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type)=>{
@@ -27,8 +27,8 @@ function App() {
   }
 
   const toggleMode = ()=>{
-    if(mode === 'light'){
-      setMode('dark');
+    if(mode === 'success'){
+      setMode('secondary');
       document.body.style.backgroundColor = '#042743';
       showAlert("Dark mode has been enabled", "success");
       document.title = 'TextUtils - Dark Mode';
