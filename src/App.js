@@ -48,24 +48,12 @@ function App() {
   }
   return (
     <>
-    {/* <Navbar title="TextUtils" aboutText="About TextUtils" /> */}
-    {/* <Navbar/> */}
-    {/* <Router> */}
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
     <Alert alert={alert}/>
     <div className="container my-3">
-    {/* <Switch> */}
-    {/* /users --> Component 1
-        /users/home --> Component 2 */}
-          {/* <Route exact path="/about"> */}
-            {/* <About /> */}
-          {/* </Route> */}
-          {/* <Route exact path="/"> */}
-            <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
-          {/* </Route> */}
-    {/* </Switch> */}
+      <TextForm showAlert={showAlert} heading="Enter  Your Text to Analysis" mode={mode}/>
     </div>
-    {/* </Router> */}
+   
     </> 
   );
 }
